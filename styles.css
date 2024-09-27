@@ -14,6 +14,8 @@ body {
 :root {
   --main: #0288d1;
   --secondary: #f7f7f7;
+  --line: #c1c1c18d;
+  --light-gray: #dad9d9;
 }
 .avatar {
   background: var(--main);
@@ -22,7 +24,7 @@ body {
   flex-direction: column;
   align-items: center;
   gap: 1.6rem;
-  padding: 2.9rem;
+  padding-top: 2.9rem;
   color: var(--secondary);
 }
 .avatar_photo {
@@ -31,12 +33,27 @@ body {
 }
 
 .name {
-  font-size: 1.2rem;
+  font-size: 1.3rem;
   letter-spacing: 0.1rem;
 }
 
 .title {
-  font-size: 1rem;
+  font-size: 0.9rem;
+  text-align: center;
+  color: var(--light-gray);
+}
+
+.action_bar {
+  display: flex;
+  border-top: 1px solid var(--line);
+  width: 100%;
+  justify-content: center;
+}
+
+.action_bar_link {
+  width: 101px;
+  height: 58px;
+  text-align: center;
 }
 
 .roboto-regular {

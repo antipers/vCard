@@ -17,6 +17,9 @@ body {
   --line: #c1c1c18d;
   --light-gray: #dad9d9;
   --hover: #026dd1;
+  --text-light-gray: #82848f;
+  --text-gray: #323032;
+  --light-blue: rgb(100, 181, 246);
 }
 .avatar {
   background: var(--main);
@@ -57,6 +60,8 @@ body {
   height: 58px;
   text-align: center;
   height: 100%;
+  text-decoration: none;
+  color: var(--secondary);
 }
 
 .action_bar_link:hover {
@@ -78,6 +83,11 @@ i {
 .container_main_info {
   display: flex;
   padding-top: 1rem;
+  color: var(--text-gray);
+}
+
+a.container_main_info {
+  text-decoration: none;
 }
 .container_main_info_text {
   padding-left: 1rem;
@@ -88,6 +98,12 @@ i {
 .type {
   padding-top: 0.5rem;
   margin-bottom: 1rem;
+  color: var(--text-light-gray);
+  font-size: 0.85rem;
+}
+
+.type.map {
+  color: var(--light-blue);
 }
 .save_contact_link_wrapper {
   background-color: var(--secondary);
@@ -114,7 +130,16 @@ i {
   margin-bottom: 2rem;
 }
 
-.social{
+.text {
+  text-decoration: none;
+  color: var(--text-gray);
+}
+.text.social {
+  color: var(--text-light-gray);
+  font-size: 1.2rem;
+}
+
+.social {
   display: flex;
   gap: 1rem;
 }

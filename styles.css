@@ -114,7 +114,9 @@ i {
   margin-bottom: 2rem;
 }
 
-.save_contact_link_icon {
+.social{
+  display: flex;
+  gap: 1rem;
 }
 .save_contact_link_text {
   padding-left: 1rem;

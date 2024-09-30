@@ -16,6 +16,7 @@ body {
   --secondary: #f7f7f7;
   --line: #c1c1c18d;
   --light-gray: #dad9d9;
+  --hover: #026dd1;
 }
 .avatar {
   background: var(--main);
@@ -47,6 +48,7 @@ body {
   display: flex;
   border-top: 1px solid var(--line);
   width: 100%;
+  height: 100%;
   justify-content: center;
 }
 
@@ -54,8 +56,69 @@ body {
   width: 101px;
   height: 58px;
   text-align: center;
+  height: 100%;
 }
 
+.action_bar_link:hover {
+  background-color: var(--hover);
+}
+
+i {
+  display: block;
+  font-size: 0.75rem;
+}
+
+.container_main {
+  background-color: var(--secondary);
+  height: 100%;
+  position: relative;
+  width: 100%;
+  padding: 1.7rem 4rem 1.5rem;
+}
+.container_main_info {
+  display: flex;
+  padding-top: 1rem;
+}
+.container_main_info_text {
+  padding-left: 1rem;
+  width: 100%;
+  border-bottom: 1px solid var(--line);
+}
+
+.type {
+  padding-top: 0.5rem;
+  margin-bottom: 1rem;
+}
+.save_contact_link_wrapper {
+  background-color: var(--secondary);
+  position: relative;
+  margin: 0 auto;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+.save_contact_link {
+  text-decoration: none;
+  display: flex;
+  position: relative;
+  background: rgb(100, 181, 246);
+  height: 56px;
+  width: 300px;
+  border-radius: 2px;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0px 10px 14.1px 0.9px rgba(0, 0, 0, 0.24),
+    0px 4px 19.6px 0.4px rgba(0, 0, 0, 0.16);
+  color: #fff;
+  margin-bottom: 2rem;
+}
+
+.save_contact_link_icon {
+}
+.save_contact_link_text {
+  padding-left: 1rem;
+}
 .roboto-regular {
   font-family: "Roboto", sans-serif;
   font-weight: 400;

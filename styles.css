@@ -104,6 +104,7 @@ a.container_main_info {
 
 .type.map {
   color: var(--light-blue);
+  text-decoration: none;
 }
 .save_contact_link_wrapper {
   background-color: var(--secondary);

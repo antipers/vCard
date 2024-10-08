@@ -1,10 +1,10 @@
 const path = window.location.pathname.split("/")[1];
-const tempPath = "bobr";
+/* const tempPath = "bobr"; */
 
 fetch(`./data/mock.json`)
   .then((response) => response.json())
   .then((data) => {
-    const person = data.find((d) => d.vCard === tempPath);
+    const person = data.find((d) => d.vCard === path);
     if (person) {
       document.getElementById("avatar_img").src = person.avatar;
       document.getElementById("name").textContent = person.name;
